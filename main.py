@@ -43,7 +43,9 @@ class TiantianSpider():
             'desp': send_msg
         }
         send_key = os.environ.get('SEND_KEY')
+        print(send_key)
         resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), form)
+        print(resp)
         if resp.status_code == 200:
             print('发送成功！')
     def run(self):
