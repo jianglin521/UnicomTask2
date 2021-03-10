@@ -19,7 +19,7 @@ class TiantianSpider():
       # self.num = [946.08,513.25,593.82,325.25,821.23,77.6,0]
         
       self.code = '160222,501057,161005,005827,001938,003096,161725'
-      self.num = [880.36,489.90,636.14,327.05,821.23,62.08,0]
+      self.num = [1008.48,579.55,684.60,394.58,821.23,15.52,0]
 
     def get_content(self):
         url = self.url.format(self.code)
@@ -43,7 +43,7 @@ class TiantianSpider():
             'desp': send_msg
         }
         send_key = os.environ.get('SEND_KEY')
-        print(send_key)
+        # print(send_key)
         resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), form)
         print(resp)
         if resp.status_code == 200:
