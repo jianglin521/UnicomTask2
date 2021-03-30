@@ -14,12 +14,12 @@ class TiantianSpider():
           'Host': 'api.doctorxiong.club',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36'
       }
-
-      # self.code = '160222,501057,161005,005827,001938,003096,161725'
-      # self.num = [946.08,513.25,593.82,325.25,821.23,77.6,0]
         
+    #   self.code = '160222,501057,161005,005827,001938,003096,161725'
+    #   self.num = [837.88,670.32,734.83,345.46,821.23,111.15,0]
+
       self.code = '160222,501057,161005,005827,001938,003096,161725'
-      self.num = [837.88,670.32,734.83,345.46,821.23,111.15,0]
+      self.num = [1100.17,875.39,837.94,785.61,821.23,111.82,0]
 
     def get_content(self):
         url = self.url.format(self.code)
