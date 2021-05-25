@@ -54,7 +54,7 @@ class TiantianSpider():
         # self.save_items(data, url_list.index(url) + 1)
         # time_sleep = random.randint(300, 350)
         # # print('暂停{}秒'.format(time_sleep))
-        # time.sleep(time_sleep)
+        # time.sleep(time_sleep0)
 
 if __name__ == '__main__':
     spider = TiantianSpider()
