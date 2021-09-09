@@ -4,14 +4,12 @@
 name: 签到
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+ push:
+    branches: main
+  gollum:
+  workflow_dispatch:
   schedule:
     - cron: 00 18 * * *
-  watch:
-    types: started
 jobs:
   build:
 
@@ -29,7 +27,7 @@ jobs:
         web: ${{ secrets.WEB }}
         user: ${{ secrets.USER }}
         pwd: ${{ secrets.PWD }}
-        sckey: ${{ secrets.SCKEY }}
+        sckey: ${{ secrets.SEND_KEY }}
         ktkey: ${{ secrets.KTKEY }}
       run: |
         pip install -r requirements.txt
