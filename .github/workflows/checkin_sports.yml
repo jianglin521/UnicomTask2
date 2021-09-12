@@ -27,7 +27,7 @@ jobs:
         pwd='${{ secrets.SPORTS_PWD }}'
         step='${{ secrets.SPORTS_STEP }}'
         python3 checkin_sports.py <<EOF
-        ${SPORTS_USER}
-        ${SPORTS_PWD}
-        ${SPORTS_STEP}
+        ${user}
+        ${pwd}
+        ${step}
         EOF
