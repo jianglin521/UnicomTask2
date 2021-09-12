@@ -25,8 +25,7 @@ jobs:
         pip install requests
         user='${{ secrets.SPORTS_USER }}'
         pwd='${{ secrets.SPORTS_PWD }}'
-        step='${{ secrets. }}'
-        SPORTS_STEP
+        step='${{ secrets.SPORTS_STEP }}'
         python3 checkin_sports.py <<EOF
         ${SPORTS_USER}
         ${SPORTS_PWD}
