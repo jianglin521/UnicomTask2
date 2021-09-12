@@ -96,9 +96,10 @@ def main(user, passwd, step):
      
     data = f'userid={userid}&last_sync_data_time=1597306380&device_type=0&last_deviceid=DA932FFFFE8816E7&data_json={data_json}'
     
-    response = requests.post(url, data=data, headers=head).json()
-    #print(response)
-    result = f"{user[:4]}****{user[-4:]}: [{now}] 修改步数（{step}）"+ response['message']
+    # response = requests.post(url, data=data, headers=head).json()
+    # #print(response)
+    # result = f"{user[:4]}****{user[-4:]}: [{now}] 修改步数（{step}）"+ response['message']
+    result = 1
     print(result)
     return result
   
@@ -129,6 +130,8 @@ if __name__ ==  "__main__":
     user_list = user.split('#')
     passwd_list = passwd.split('#')
     setp_array = step.split('-')
+
+    print(user_list, passwd_list, setp_array)
 
     if len(user_list) == len(passwd_list):
         push = ''
