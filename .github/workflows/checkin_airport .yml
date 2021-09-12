@@ -1,12 +1,12 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: 签到
+name: 机场签到
 
 on:
   # push:
   #   branches: main
-  gollum:
+  # gollum:
   workflow_dispatch:
   schedule:
     - cron: '0 3 * * *'
@@ -24,11 +24,11 @@ jobs:
         python-version: 3.7
     - name: Run
       env:
-        web: ${{ secrets.WEB }}
-        user: ${{ secrets.USER }}
-        pwd: ${{ secrets.PWD }}
+        web: ${{ secrets.AIRPORT_WEB }}
+        user: ${{ secrets.AIRPORT_USER }}
+        pwd: ${{ secrets.AIRPORT_PWD }}
         sckey: ${{ secrets.SEND_KEY }}
         ktkey: ${{ secrets.KTKEY }}
       run: |
         pip install -r requirements.txt
-        python3 checkin.py
+        python3 checkin_airport.py

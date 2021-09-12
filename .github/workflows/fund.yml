@@ -1,9 +1,9 @@
-name: 基金
+name: 基金收益
 
 on:
   # push:
   #   branches: main
-  gollum:
+  # gollum:
   workflow_dispatch:
   schedule:
     - cron: '0 3,7 * * 1-5'
