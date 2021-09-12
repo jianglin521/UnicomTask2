@@ -21,6 +21,8 @@ jobs:
       with:
         python-version: 3.7
     - name: 开始
+      env:
+        TZ: Asia/Shanghai
       run: |
         pip install requests
         user='${{ secrets.SPORTS_USER }}'

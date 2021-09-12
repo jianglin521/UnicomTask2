@@ -68,7 +68,7 @@ def main(user, passwd, step):
     
     if step == '':
         print ("已设置为随机步数（18000-25000）")
-        step = str(random.randint(8000,9000))
+        step = str(random.randint(18000,25000))
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
@@ -115,7 +115,7 @@ def get_app_token(login_token):
     response = requests.get(url,headers=headers).json()
     app_token = response['token_info']['app_token']
     print("app_token获取成功！")
-    print(app_token)
+    # print(app_token)
     return app_token
     
 if __name__ ==  "__main__":
