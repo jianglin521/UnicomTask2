@@ -68,7 +68,7 @@ def main(user, passwd, step):
     
     if step == '':
         print ("已设置为随机步数（18000-25000）")
-        step = str(random.randint(7000,8000))
+        step = str(random.randint(8000,9000))
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
@@ -95,12 +95,10 @@ def main(user, passwd, step):
         }
      
     data = f'userid={userid}&last_sync_data_time=1597306380&device_type=0&last_deviceid=DA932FFFFE8816E7&data_json={data_json}'
-    print(head, '7777')
     
-    # response = requests.post(url, data=data, headers=head).json()
-    # #print(response)
-    # result = f"{user[:4]}****{user[-4:]}: [{now}] 修改步数（{step}）"+ response['message']
-    result = 1
+    response = requests.post(url, data=data, headers=head).json()
+    #print(response)
+    result = f"{user[:4]}****{user[-4:]}: [{now}] 修改步数（{step}）"+ response['message']
     print(result)
     return result
   
