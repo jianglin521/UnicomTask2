@@ -5,6 +5,7 @@ from telethon import TelegramClient, events, sync
 
 api_id = input() # api_id
 api_hash = input()	# 输入api_hash
+print(api_id + api_hash, '77777777')
 path = r'./telegram.log'
 client = TelegramClient('telegram', api_id, api_hash)
 client.connect()
