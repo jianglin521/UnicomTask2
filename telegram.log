@@ -1,0 +1,135 @@
+## 东东农场：
+MyFruit1='2d57ca5930a8460a816c73fc1a556307'
+MyFruit2='ff135145501d416986a913232c807f7a'
+MyFruit3='2a6a263872c84b32b5774e7b0c66e326'
+MyFruit4='12992c3fa7164bb187baedad70a126c0'
+
+## 采用"均等助力"互助模板：
+ForOtherFruit1="${MyFruit2}@${MyFruit3}@${MyFruit4}"
+ForOtherFruit2="${MyFruit3}@${MyFruit4}@${MyFruit1}"
+ForOtherFruit3="${MyFruit4}@${MyFruit1}@${MyFruit2}"
+ForOtherFruit4="${MyFruit1}@${MyFruit2}@${MyFruit3}"
+
+## 东东萌宠：
+MyPet1='MTE1NDQ5MzYwMDAwMDAwNDY1Nzg1OTk='
+MyPet2='MTE1NDQ5MzYwMDAwMDAwNDcwODM5Mjc='
+MyPet3='MTE0MDQ3MzIwMDAwMDAwNDkyNjI5OTU='
+MyPet4='MTE5MzEwNTEzODAwMDAwMDA1NTgyMzUxNw=='
+
+## 采用"均等助力"互助模板：
+ForOtherPet1="${MyPet2}@${MyPet3}@${MyPet4}"
+ForOtherPet2="${MyPet3}@${MyPet4}@${MyPet1}"
+ForOtherPet3="${MyPet4}@${MyPet1}@${MyPet2}"
+ForOtherPet4="${MyPet1}@${MyPet2}@${MyPet3}"
+
+## 种豆得豆：
+MyBean1='e7lhibzb3zek2ljkkalxkiozwpoibol72mmsxaq'
+MyBean2='xa2fd6b7yzsftbkj52bcezrpve'
+MyBean3='qo77jw3hunt3nzb54hyt534iw3mzxti33ocr4oi'
+MyBean4='uxkp45y3vv37is7xkl6wng5owy5ac3f4ijdgqji'
+
+## 采用"均等助力"互助模板：
+ForOtherBean1="${MyBean2}@${MyBean3}@${MyBean4}"
+ForOtherBean2="${MyBean3}@${MyBean4}@${MyBean1}"
+ForOtherBean3="${MyBean4}@${MyBean1}@${MyBean2}"
+ForOtherBean4="${MyBean1}@${MyBean2}@${MyBean3}"
+
+## 京喜工厂：
+MyDreamFactory1='vtLWzhFQYjLWfVGIFZTN3Q=='
+MyDreamFactory2=''
+MyDreamFactory3=''
+MyDreamFactory4=''
+
+## 采用"均等助力"互助模板：
+ForOtherDreamFactory1="${MyDreamFactory2}@${MyDreamFactory3}@${MyDreamFactory4}"
+ForOtherDreamFactory2="${MyDreamFactory3}@${MyDreamFactory4}@${MyDreamFactory1}"
+ForOtherDreamFactory3="${MyDreamFactory4}@${MyDreamFactory1}@${MyDreamFactory2}"
+ForOtherDreamFactory4="${MyDreamFactory1}@${MyDreamFactory2}@${MyDreamFactory3}"
+
+## 东东工厂：
+MyJdFactory1='T0225KkcRB4a8geEJ0jwnfIPdQCjVWnYaS5kRrbA'
+MyJdFactory2='T0155KQtF0JAq1bXIhoCjVWnYaS5kRrbA'
+MyJdFactory3='T0205KkcP0pOkwqmdV-j17ZqCjVWnYaS5kRrbA'
+MyJdFactory4=''
+
+## 采用"均等助力"互助模板：
+ForOtherJdFactory1="${MyJdFactory2}@${MyJdFactory3}@${MyJdFactory4}"
+ForOtherJdFactory2="${MyJdFactory3}@${MyJdFactory4}@${MyJdFactory1}"
+ForOtherJdFactory3="${MyJdFactory4}@${MyJdFactory1}@${MyJdFactory2}"
+ForOtherJdFactory4="${MyJdFactory1}@${MyJdFactory2}@${MyJdFactory3}"
+
+## 疯狂的JOY：
+#【23:10:07】 未运行过 shufflewzc_faker2_jd_crazy_joy.js 脚本，未产生日志
+
+## 京东赚赚：
+## 从日志中未找到任何互助码
+
+## 京喜农场：
+#【23:10:08】 未运行过 shufflewzc_faker2_jd_jxnc.js 脚本，未产生日志
+
+## 口袋书店：
+## 从日志中未找到任何互助码
+
+## 签到领现金：
+MyCash1='eU9YaOyxYa919jzRwnYW1w'
+MyCash2='eUJpO7DrOP4m824'
+MyCash3='eU9YE7jlAKJXpCuCiDJz'
+MyCash4='eUJmMrvuP6Ik8WzX'
+
+## 采用"均等助力"互助模板：
+ForOtherCash1="${MyCash2}@${MyCash3}@${MyCash4}"
+ForOtherCash2="${MyCash3}@${MyCash4}@${MyCash1}"
+ForOtherCash3="${MyCash4}@${MyCash1}@${MyCash2}"
+ForOtherCash4="${MyCash1}@${MyCash2}@${MyCash3}"
+
+## 闪购盲盒：
+MySgmh1='T0225KkcRB4a8geEJ0jwnfIPdQCjVQmoaT5kRrbA'
+MySgmh2='T0155KQtF0JAq1bXIhoCjVQmoaT5kRrbA'
+MySgmh3='T0205KkcP0pOkwqmdV-j17ZqCjVQmoaT5kRrbA'
+MySgmh4='T0165KQiHklFrArVIBj2CjVQmoaT5kRrbA'
+
+## 采用"均等助力"互助模板：
+ForOtherSgmh1="${MySgmh2}@${MySgmh3}@${MySgmh4}"
+ForOtherSgmh2="${MySgmh3}@${MySgmh4}@${MySgmh1}"
+ForOtherSgmh3="${MySgmh4}@${MySgmh1}@${MySgmh2}"
+ForOtherSgmh4="${MySgmh1}@${MySgmh2}@${MySgmh3}"
+
+## 京喜财富岛：
+#【23:10:08】 未运行过 shufflewzc_faker2_jd_cfd.js 脚本，未产生日志
+
+## 东东健康社区：
+MyHealth1='T0225KkcRB4a8geEJ0jwnfIPdQCjVfnoaW5kRrbA'
+MyHealth2=''
+MyHealth3='T0205KkcP0pOkwqmdV-j17ZqCjVfnoaW5kRrbA'
+MyHealth4='T0165KQiHklFrArVIBj2CjVfnoaW5kRrbA'
+
+## 采用"均等助力"互助模板：
+ForOtherHealth1="${MyHealth2}@${MyHealth3}@${MyHealth4}"
+ForOtherHealth2="${MyHealth3}@${MyHealth4}@${MyHealth1}"
+ForOtherHealth3="${MyHealth4}@${MyHealth1}@${MyHealth2}"
+ForOtherHealth4="${MyHealth1}@${MyHealth2}@${MyHealth3}"
+
+## 京东手机狂欢城：
+## 从日志中未找到任何互助码
+
+## 城城领现金：
+#【23:10:09】 未运行过 shufflewzc_faker2_jd_city.js 脚本，未产生日志
+
+## 摇钱树：
+MyMoneyTree1='l88CXBMeuFLW3Wi4irMOwsAdoUJQ3Dik'
+MyMoneyTree2='dD2lxJZJcRzeMhgDzyxKCg'
+MyMoneyTree3='EXjPYQm3n9v5VwLSUL8Q5w'
+MyMoneyTree4=''
+
+## 采用"均等助力"互助模板：
+ForOtherMoneyTree1="${MyMoneyTree2}@${MyMoneyTree3}@${MyMoneyTree4}"
+ForOtherMoneyTree2="${MyMoneyTree3}@${MyMoneyTree4}@${MyMoneyTree1}"
+ForOtherMoneyTree3="${MyMoneyTree4}@${MyMoneyTree1}@${MyMoneyTree2}"
+ForOtherMoneyTree4="${MyMoneyTree1}@${MyMoneyTree2}@${MyMoneyTree3}"
+
+## 京喜token：
+#【23:10:09】 未运行过 shufflewzc_faker2_jd_cfd.js 脚本，未产生日志
+
+#【23:10:15】 开始更新配置文件的互助码和互助规则
+
+#【23:10:57】 配置文件的互助码和互助规则已完成更新

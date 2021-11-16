@@ -1,0 +1,33 @@
+name: 助力池
+
+on:
+  # push:
+  #   branches: [ master ]
+  # pull_request:
+  #   branches: [ master ]
+  workflow_dispatch: # 手动触发
+  # schedule:
+  #   - cron: 0 10 * * *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: 初始化Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    - name: 开始
+      env:
+        TZ: Asia/Shanghai
+      run: |
+        pip install telethon
+        api_hash='${{ secrets.api_hash }}'
+        api_id='${{ secrets.api_id }}'
+        python3 telegram.py <<EOF
+        ${api_hash}
+        ${api_id}
+        EOF
