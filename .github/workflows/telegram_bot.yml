@@ -1,8 +1,8 @@
 name: 助力池
 
 on:
-  # push:
-  #   branches: [ master ]
+  push:
+    branches: [ main ]
   # pull_request:
   #   branches: [ master ]
   workflow_dispatch: # 手动触发
@@ -25,9 +25,11 @@ jobs:
         TZ: Asia/Shanghai
       run: |
         pip install telethon
-        api_hash='${{ secrets.API_HASH }}'
+        pwd
+        ls
         api_id='${{ secrets.API_ID }}'
+        api_hash='${{ secrets.API_HASH }}'
         python3 telegram.py <<EOF
-        ${api_hash}
         ${api_id}
+        ${api_hash}
         EOF
