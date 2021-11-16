@@ -1,13 +1,13 @@
 name: 助力池
 
 on:
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
   # pull_request:
   #   branches: [ master ]
   workflow_dispatch: # 手动触发
-  # schedule:
-  #   - cron: 0 10 * * *
+  schedule:
+    - cron: 0 16 * * *
 
 jobs:
   build:
@@ -25,11 +25,11 @@ jobs:
         TZ: Asia/Shanghai
       run: |
         pip install telethon
-        pwd
-        ls
         api_id='${{ secrets.API_ID }}'
         api_hash='${{ secrets.API_HASH }}'
+        bot_name='${{ secrets.BOT_NAME }}'
         python3 telegram.py <<EOF
         ${api_id}
         ${api_hash}
+        ${bot_name}
         EOF

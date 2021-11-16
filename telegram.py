@@ -4,16 +4,17 @@ import time
 from telethon import TelegramClient, events, sync
 
 api_id = input() # api_id
-api_hash = input()	# 输入api_hash
+api_hash = input()	# api_hash
+bot_name = input()	# bot_name
 path = r'./telegram.log'
 client = TelegramClient('telegram', api_id, api_hash)
 client.connect()
 #发送消息
 def sendMessage(message):
   try:
-    client.send_message('@guan_v2p_bot', message)
+    client.send_message(bot_name, message)
     time.sleep(10)
-    # client.send_message("@guan_v2p_bot", '/farm 1234567890123456')
+    # client.send_message("@test_bot", '/farm 1234567890123456')
   except Exception as e:
       print(e)
 #获取消息   
