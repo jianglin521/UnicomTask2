@@ -69,7 +69,7 @@ HappyContent = title + Today + sayhello + Friday + '\n' + str1 + '\n' + str2 + '
 print(HappyContent)
 HappyContent = HappyContent.encode('utf-8')
 send_key = os.environ.get('SEND_KEY')
-# print(send_key)
+print(send_key)
 resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), HappyContent)
 print(resp)
 if resp.status_code == 200:
