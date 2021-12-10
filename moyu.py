@@ -67,10 +67,14 @@ HappyContent = title + Today + sayhello + Friday + '\n' + str1 + '\n' + str2 + '
     laodong_days + duanwu_days + zhongqiu_days + guoqing_days
 
 print(HappyContent)
-HappyContent = HappyContent.encode('utf-8')
+
+form = {
+    'title': '摸鱼办',
+    'desp': HappyContent
+}
 send_key = os.environ.get('SEND_KEY')
 print(send_key)
-resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), HappyContent)
+resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), form)
 print(resp)
 if resp.status_code == 200:
     print('发送成功！')
