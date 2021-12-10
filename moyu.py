@@ -70,7 +70,7 @@ print(HappyContent)
 
 send_key = os.environ.get('SEND_KEY')
 # print(send_key)
-resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), form)
+resp = requests.post('https://sctapi.ftqq.com/{}.send'.format(send_key), HappyContent)
 print(resp)
 if resp.status_code == 200:
     print('发送成功！')
