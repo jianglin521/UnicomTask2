@@ -11,7 +11,7 @@ import os
 # 中秋
 # 国庆
 
-title = '\n\n【摸鱼办】\n\n'
+title = '\n\n摸鱼办\n\n'
 today = datetime.datetime.now()
 
 if today.hour >= 8 and today.hour <= 10:
