@@ -25,6 +25,7 @@ jobs:
         SEND_KEY: ${{ secrets.SEND_KEY }}
         TZ: Asia/Shanghai
       run: |
+        pip install requests
         pip install datetime
         python3 moyu.py
 
