@@ -69,7 +69,7 @@ HappyContent = title + Today + sayhello + Friday + '\n' + str1 + '\n' + str2 + '
 print(HappyContent)
 
 form = {
-    'title': '摸鱼办',
+    # 'title': '摸鱼办',
     'desp': HappyContent
 }
 send_key = os.environ.get('SEND_KEY')
