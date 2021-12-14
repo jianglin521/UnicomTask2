@@ -11,7 +11,7 @@ import os
 # 中秋
 # 国庆
 
-title = '\n\n【摸鱼办】\n\n'
+title = '\n\n【摸鱼办】提醒您\n\n'
 today = datetime.datetime.now()
 
 if today.hour >= 8 and today.hour <= 10:
@@ -34,12 +34,17 @@ else:
 Friday = '今天是周五吗？' + isFriday + '\n'
 
 
-str1 = '工作再累，一定不要忘记摸鱼哦！'
-str2 = '有事没事起身去茶水间，去厕所，去走廊走走！'
+str1 = '无论工作再忙，一定不要忘记摸鱼哦！\n'
+str2 = '有事没事起身去茶水间，去厕所，去走廊走走！\n'
 str3 = '别老在工位上坐着，钱是老板的, 但命是自己的！\n'
+str4 = '上班是在帮老板赚钱，摸鱼是在赚老板的钱！\n'
+str5 = '祝愿天下所有摸鱼人，都能愉快渡过每一天!'
 
 td = datetime.datetime(today.year, today.month, today.day)
-tm = datetime.datetime(2021, 12, 10)
+# tm = datetime.datetime(2021, 12, 21)
+
+dongzhi = datetime.datetime(2021, 12, 21) #冬至
+shengdan = datetime.datetime(2021, 12, 25) #圣诞
 yuandan = datetime.datetime(2022, 1, 1)
 chunjie = datetime.datetime(2022, 2, 1)
 qingming = datetime.datetime(2022, 4, 5)
@@ -52,7 +57,8 @@ guoqing = datetime.datetime(2022, 10, 1)
 Today = "今天是" + str(today.year) + "年" + str(today.month) + \
     "月" + str(today.day) + "日。\n"
 Weekday = "距离本周周末还有" + str(6 - today.weekday()-1) + "天！\n"
-
+dongzhi_days = "距离冬至还有" + str(abs((td - dongzhi).days)) + "天！\n"
+shengdan_days = "距离圣诞还有" + str(abs((td - shengdan).days)) + "天！\n"
 yuandan_days = "距离元旦节还有" + str(abs((td - yuandan).days)) + "天！\n"
 chunjie_days = "距离春节还有" + str(abs((td - chunjie).days)) + "天！\n"
 qingming_days = "距离清明节还有" + str(abs((td - qingming).days)) + "天！\n"
@@ -62,9 +68,11 @@ zhongqiu_days = "距离中秋节还有" + str(abs((td - zhongqiu).days)) + "天�
 guoqing_days = "距离国庆节还有" + str(abs((td - guoqing).days)) + "天！\n"
 
 
-HappyContent = title + Today + sayhello + Friday + '\n' + str1 + '\n' + str2 + '\n' + str3 + '\n' + Weekday + \
+HappyContent = title + Today + sayhello + Friday + str1 + str2 + str3 + Weekday + \
+    dongzhi_days + shengdan_days + \
     yuandan_days + chunjie_days + qingming_days + \
-    laodong_days + duanwu_days + zhongqiu_days + guoqing_days
+    laodong_days + duanwu_days + zhongqiu_days + guoqing_days + \
+    str4 + str5
 
 print(HappyContent)
 
