@@ -55,7 +55,7 @@ guoqing = datetime.datetime(2022, 10, 1)
 
 
 Today = "今天是" + str(today.year) + "年" + str(today.month) + \
-    "月" + str(today.day) + "日。\n"
+    "月" + str(today.day) + "日 \n"
 Weekday = "距离本周周末还有" + str(6 - today.weekday()-1) + "天！\n"
 dongzhi_days = "距离冬至还有" + str(abs((td - dongzhi).days)) + "天！\n"
 shengdan_days = "距离圣诞还有" + str(abs((td - shengdan).days)) + "天！\n"
