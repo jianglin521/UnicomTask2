@@ -43,7 +43,7 @@ str5 = '祝愿天下所有摸鱼人，都能愉快渡过每一天!'
 td = datetime.datetime(today.year, today.month, today.day)
 # tm = datetime.datetime(2021, 12, 21)
 
-dongzhi = datetime.datetime(2021, 12, 21) #冬至
+# dongzhi = datetime.datetime(2021, 12, 21) #冬至
 shengdan = datetime.datetime(2021, 12, 25) #圣诞
 yuandan = datetime.datetime(2022, 1, 1)
 chunjie = datetime.datetime(2022, 2, 1)
@@ -69,7 +69,7 @@ guoqing_days = "距离国庆节还有" + str(abs((td - guoqing).days)) + "天！
 
 
 HappyContent = title + Today + sayhello + Friday + str1 + str2 + str3 + Weekday + \
-    dongzhi_days + shengdan_days + \
+    shengdan_days + \
     yuandan_days + chunjie_days + qingming_days + \
     laodong_days + duanwu_days + zhongqiu_days + guoqing_days + \
     str4 + str5
